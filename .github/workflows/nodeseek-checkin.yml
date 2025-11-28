@@ -1,0 +1,50 @@
+name: NodeSeek Auto Checkin
+
+on:
+  schedule:
+    # 北京时间 00:05 对应 UTC 16:05（前一天）
+    - cron: '5 16 * * *'
+  workflow_dispatch:
+
+jobs:
+  checkin:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        timeout-minutes: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+        timeout-minutes: 3
+
+      - name: Install system dependencies
+        timeout-minutes: 5
+        run: |
+          echo "更新系统包..."
+          sudo apt-get update -qq
+          echo "安装系统依赖..."
+          sudo apt-get install -y -qq chromium-browser chromium-chromedriver
+          echo "依赖安装完成"
+
+      - name: Install Python dependencies
+        timeout-minutes: 5
+        run: |
+          echo "安装 Python 依赖..."
+          python -m pip install --upgrade pip -q
+          pip install -q requests selenium webdriver-manager
+          echo "依赖安装完成"
+
+      - name: Run checkin script
+        timeout-minutes: 110
+        env:
+          ACCOUNTS: ${{ secrets.ACCOUNTS }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_ACTIONS: 'true'
+        run: |
+          python -u nodeseek_checkin_fixed.py
