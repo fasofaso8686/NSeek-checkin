@@ -1,52 +1,76 @@
-# NSeek-checkin
-第1步：Fork 仓库
+NSeek-checkin
+An automated check-in tool powered by GitHub Actions for managing multiple account sign-ins.
 
-GitHub 右上角点击 Fork 按钮
+Overview
+NSeek-checkin provides a Python script and GitHub Actions workflow to automate check-in (sign-in) operations for multiple accounts. The tool runs scheduled tasks automatically without manual intervention.
+​
 
-第2步：配置 Secrets
+Features
+Automated daily check-ins via GitHub Actions
 
-进入 Settings → Secrets and variables → Actions
+Support for multiple accounts
 
-点击 New repository secret
+Configurable scheduling
 
-添加以下内容：
+Secure credential management using GitHub Secrets
 
-必填：ACCOUNTS
+Email notifications for check-in status
 
-json
-[
-  {"email": "123456@abc.com", "password": "abc123"}
-]
-可选：TELEGRAM_BOT_TOKEN 和 TELEGRAM_CHAT_ID（用于接收签到通知）
+Detailed logging and error handling
 
-第3步：启用 Actions
+Setup Instructions
+Prerequisites
+GitHub account
 
-进入 Actions 标签
+Python 3.x (for local testing)
 
-点击 I understand my workflows, go ahead and enable them
+Account credentials for the target service
 
-点击 Run workflow 测试
+Installation
+Fork this repository to your GitHub account
 
-第4步：设置为私有仓库
+Navigate to Settings → Secrets and variables → Actions
 
-Settings → 下拉到 Danger Zone → Change to private
+Add the following secrets:
 
-✨ 核心修复内容
-✅ 6种元素定位方式 - 确保找到按钮
+ACCOUNT_USERNAME: Your account username
 
-✅ 双重点击机制 - 普通+JavaScript备选
+ACCOUNT_PASSWORD: Your account password
 
-✅ 自动滚动定位 - scrollIntoView
+Additional credentials as needed
 
-✅ 40秒多重等待 - Page Load + WebDriverWait
+Configuration
+The workflow is configured in .github/workflows/ and runs automatically based on the schedule defined in the YAML file. You can modify the cron schedule to adjust the check-in frequency.
 
-✅ 分类详细日志 - [初始化][登录][签到][结果]
+Usage
+Once configured, the workflow runs automatically according to the schedule. You can also trigger it manually:
 
-✅ 完整错误追踪 - traceback打印
+Go to the Actions tab in your repository
 
-⏰ 执行配置
-执行时间：每天北京时间 00:05
+Select the workflow
 
-账号间隔：5 分钟
+Click Run workflow
 
-签到方式：1:5 概率随机选择
+File Structure
+text
+NSeek-checkin/
+├── .github/workflows/    # GitHub Actions workflow files
+├── README.md            # Project documentation
+└── nodeseek_checkin_fixed.py  # Main check-in script
+Troubleshooting
+Check the Actions tab for execution logs if check-ins fail
+
+Verify that all secrets are correctly configured
+
+Ensure your account credentials are valid
+
+Disclaimer
+This tool is for educational purposes only. Please ensure you comply with the terms of service of any platform you use this tool with. The authors are not responsible for any misuse or violations.
+
+Contributing
+Contributions are welcome! Please feel free to submit issues or pull requests.
+
+License
+This project is provided as-is for personal use.
+
+This template provides a professional structure for the README. To customize it further, you would need to access the actual README.md content from the repository to incorporate any specific features, commands, or configuration details unique to the NSeek-checkin project.
