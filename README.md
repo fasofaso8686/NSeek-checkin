@@ -1,3 +1,35 @@
+
+<div align="right">
+  <details>
+    <summary >🌐 Language</summary>
+    <div>
+      <div align="center">
+        <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=en">English</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=zh-CN">简体中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=zh-TW">繁體中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=ja">日本語</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=ko">한국어</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=hi">हिन्दी</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=th">ไทย</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=fr">Français</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=de">Deutsch</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=es">Español</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=it">Italiano</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=ru">Русский</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=pt">Português</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=nl">Nederlands</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=pl">Polski</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=ar">العربية</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=fa">فارسی</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=tr">Türkçe</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=vi">Tiếng Việt</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=id">Bahasa Indonesia</a>
+        | <a href="https://openaitx.github.io/view.html?user=fasofaso8686&project=NSeek-checkin&lang=as">অসমীয়া</
+      </div>
+    </div>
+  </details>
+</div>
+
 NSeek-checkin
 An automated check-in tool powered by GitHub Actions for managing multiple account sign-ins.
 
